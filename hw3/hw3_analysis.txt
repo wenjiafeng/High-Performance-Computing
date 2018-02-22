@@ -1,0 +1,118 @@
+3.1
+pleae enter an integer iteration number: 100000000
+             n            Pi          time
+     100000000        3.1417          3.18
+
+Pleae enter an integer iteration number: 100000000
+             n            Pi          time
+     100000000        3.1417          3.18
+
+Pleae enter an integer iteration number: 100000000
+             n            Pi          time
+     100000000        3.1417          3.18
+
+3.2
+option 1:
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 1
+Pleae enter number of threads: 1
+                n               Pi             time
+        100000000          3.14168          3.07624
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 1
+Pleae enter number of threads: 2
+                n               Pi             time
+        100000000           3.1414          42.2045
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 1
+Pleae enter number of threads: 4
+                n               Pi             time
+        100000000          3.14191          52.9347
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 1
+Pleae enter number of threads: 8
+                n               Pi             time
+        100000000          3.14146          42.0106
+
+option 2:
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 2
+Pleae enter number of threads: 1
+                n               Pi             time
+        100000000          3.14159           2.6379
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 2
+Pleae enter number of threads: 2
+                n               Pi             time
+        100000000          3.14162          4.70313
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 2
+Pleae enter number of threads: 4
+                n               Pi             time
+        100000000          3.13849          4.33158
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 2
+Pleae enter number of threads: 8
+                n               Pi             time
+        100000000          3.14045          4.46817
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 3
+Pleae enter number of threads: 1
+                n               Pi             time
+        100000000                4          3.02632
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 3
+Pleae enter number of threads: 2
+                n               Pi             time
+        100000000          3.57122          10.6298
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 3
+Pleae enter number of threads: 4
+                n               Pi             time
+        100000000          3.34927          8.56065
+
+Pleae enter an integer iteration number: 100000000
+Pleae select option unction 1:rand 2:rand_r 3:drand48_r 3
+Pleae enter number of threads: 8
+                n               Pi             time
+        100000000          3.24797          12.1369
+
+
+3.3
+Using serial method can get stable running time and accuracy. I test couple times of serial methods,
+	the results are really similar.
+Using parallel methods have chance to improve the accuracy and speed with certain option and thread number.
+Option 1 can get the most accurate PI no matter the setting of thread number.
+Option 2 can get a good accuracy PI with thread number as 1 or 2. When the thread number increase, the accuracy getting lower.
+Option 3 can get the worst accuracy PI in all of the methods. Increasing the thread number can get the accurcy better,
+	but still not good.
+
+
+3.4
+Using serial method still can give us a good speed. 
+Using parallel methods can get the running time better or worse.
+In option 1, running time is ok in thread number as 1. When I increase the threads, running time get a lot worse.
+	They are the worst in all of the methods and thread number setting.
+In option 2, running time is better than other methods. When I increase the threads, running time getting a little bit worse.
+	But still better than other methods with same number of threads.
+In option 3, running time is in middle of all methods. When I increase the threads, running time getting worse.
+	But not that much difference like option 1.   
+
+3.5
+The function rand() is not reentrant or thread-safe, since it uses hidden state that is modified on each call.
+The seed in different threads have different value.This might just be the seed value to be used by the next call, or it might be something more elaborate.
+
+
+Files are return through git:
+- hw3_pi_ser.cpp
+- hw3_pi_par.cpp
+- hw3_analysis.txt
+
