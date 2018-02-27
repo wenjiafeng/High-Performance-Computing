@@ -1,0 +1,10 @@
+hw2 score: 18 (total: 20)
+comment:
+- Somehow, you reported wrong count of prime numbers as below:
+
+The count of prime number shows as 37159.
+The wall-clock time is 0.14608.
+
+That is not using the private variable correctly. However, your code also has "private variable" tests.. Not sure how you worked..
+
+From next time, test your code clearly.
