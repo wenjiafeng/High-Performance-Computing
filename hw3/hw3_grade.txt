@@ -1,0 +1,3 @@
+hw3 score: 19 (total: 20)
+comment:
+- Loop counter varaible "i" wad declared before, so it should be private. The other parts and your analysis are very good!
