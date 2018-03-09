@@ -1,0 +1,8 @@
+	  	p=2	 	p=4	  	p=8
+N=100		7.08E-05	0.000118971	0.00043082
+N=10000		0.000205994	0.00041914	0.00068307
+N=1000000	0.00875688	0.00953102	0.010741
+
+Here is the table of runing time with different value of N and p.
+N=100 and N=10000’s runing time is pretty similar. But when N=1000000, the running time cames bigger. For the value p, typically the more processor we use, the bigger the running time. 
+
