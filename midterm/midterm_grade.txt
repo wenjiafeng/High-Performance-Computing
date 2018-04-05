@@ -1,0 +1,3 @@
+midterm score: 95 (total: 100)
+comment:
+- Check the solution.
