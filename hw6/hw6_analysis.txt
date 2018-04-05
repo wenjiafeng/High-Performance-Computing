@@ -1,0 +1,13 @@
+		p=2		p=4		p=8
+N=100		0.000112057	0.000124931	0.000464916
+N=10000		0.000299931	0.000429869	0.000533104
+N=1000000	0.0140769	0.0135419	0.0139802
+
+Here is the table of cpu running time with different value of N and p.
+With the increase of N(same processor number condition), running time increase.
+
+When N=100 and N=10000, running time increase with the increase of processor number.
+
+When N=1000000, running time decrease when change processor number from 2 to 4. 
+However, when change p to 8, the running time is close to p=2.
+ 
